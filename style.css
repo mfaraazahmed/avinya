@@ -1,0 +1,260 @@
+
+
+.sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+.content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .title {
+    font-family: 'Courgette', cursive;
+    font-size: 4rem;
+    margin: 2rem 0;
+    color: #222;
+}
+
+.hero .hero-img {
+    object-fit: cover;
+    width: 40%;
+    height: auto;
+    /* rotate: 2deg; */
+}
+
+.hero .title span{
+    color: #051BB0;
+}
+
+.quote, .about {
+    margin-top: 7rem;
+}
+
+.about .col-6.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.about .col-6 img{
+    height: 17rem;
+    width: auto;
+    object-fit: cover;
+}
+
+.about .content{
+    margin-top: 5rem;
+}
+
+.quote-section .quote span{
+    color: #051BB0;
+    font-weight: 600;
+}
+
+.quote-section .quote{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    width: 60vw;
+}
+
+.quote-section .quote.right{
+    float: right;
+    text-align: right;
+}
+
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.quote.col-6 {
+    margin-top: 0;
+}
+
+.quote-section img{
+    height: 15rem;
+    width: auto;
+    object-fit: cover;
+}
+
+.story-section {
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+
+.story-section .col-4 img{
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+}
+
+.story-section .story-line {
+    width: 65vw;
+    margin: 0 auto;
+}
+
+.story-section .sub-title {
+    margin-bottom: 4rem;
+}
+
+.story-section .story-line .row {
+    margin-bottom: 2.5rem ;    
+}
+
+.story-section .story-line .row .col-1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.story-section .story-line .row .col-7 .story-title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.read-section {
+    margin-top: 7rem;
+}
+
+.read-section .sub-title {
+    margin: 1.5rem 0;
+}
+
+.read-section .book-review {
+    justify-content: space-between;
+}
+
+.read-section .book-review > div {
+    width: 33.33%;
+}
+
+.read-section .book-review .book-title {
+    font-family: 'Courgette', cursive;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.read-section .book-review .book-review {
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.read-section .book-review img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.awards-section {
+    margin-top: 10rem;
+}
+
+.awards-section .row .col-6 .sub-title{
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.awards-section .row .col-6 .sub-title span{
+    color: #051BB0;
+}
+
+.awards-section .row .col-6 img {
+    height: 25rem;
+    width: auto;
+    object-fit: cover;
+    margin-top: 3rem;
+}
+
+.awards-section .row .col-6 .achievements .content {
+    background-color: #222;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.awards-section .row .col-6 .achievements .content .list{
+    display: flex;
+    align-items: end;
+    justify-self: center;
+    flex-direction: column;
+    color: #f9f9f9;
+}
+
+.awards-section .row .col-6 .achievements .content .list div {
+    display: block;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.contact-me {
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+}
+
+.contact-me .row{
+    background-color: #222;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.contact-me .row .col-4 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.contact-me .row .col-4 img{
+    height: 35rem;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact-me .row .col-8 form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.contact-me .row .col-8 form label {
+    color: #f9f9f9;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-me .row .col-8 form input {
+    height: 3rem;
+    border-radius: 10px;
+    width: 80%;
+}
+
+textarea {   
+    border-radius: 10px;
+    width: 80%;
+}
+
+.contact-me .row .col-8 form input[type="submit"] {
+    margin-top: 2rem;
+}
+
+.contact-me .row .col-8 form input[type="submit"]:hover{
+    border: 1px solid  #f9f9f9;
+    color: #f9f9f9;
+    background-color: #222;
+}
