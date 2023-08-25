@@ -259,7 +259,7 @@ textarea {
     background-color: #222;
 }
 
-.quote-section{
+.footer-section{
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -268,12 +268,16 @@ textarea {
     margin-bottom: 7rem;
 }
 
-.quote-section .quote{
+.footer-section .footer-quote{
     font-size: 3rem;
     width: fit-content;
 }
 
-.quote-section .author{
+.footer-section .footer-quote span{
+    color: #051BB0;
+}
+
+.footer-section .author{
     font: 1.5rem;
     font-weight: 500;
 }
