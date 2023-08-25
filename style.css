@@ -258,3 +258,22 @@ textarea {
     color: #f9f9f9;
     background-color: #222;
 }
+
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 7rem;
+}
+
+.quote-section .quote{
+    font-size: 3rem;
+    width: fit-content;
+}
+
+.quote-section .author{
+    font: 1.5rem;
+    font-weight: 500;
+}
