@@ -224,6 +224,12 @@ span{
     padding-top: 5rem;
 }
 
+.venturescape-title {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
 .venturescape-section .sub-title {
     margin-bottom: 3rem;
 }
@@ -236,11 +242,10 @@ span{
 }
 
 .venturescape-section .ventures img{
-    width: 18rem;
-    height: auto;
+    width: 23rem;
+    height: 17rem;
     object-fit: cover;
     background-color: #222;
-    padding: 3rem;
     border-radius: 10px;
     transition: transform 300ms ease-in-out;
     
