@@ -166,9 +166,10 @@ span{
 }
 
 .quote-section .quote{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
     width: 60vw;
+    font-weight: 800;
 }
 
 .quote-section .quote.right{
@@ -417,4 +418,32 @@ textarea {
 .footer-section .author{
     font: 1.5rem;
     font-weight: 500;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sub-title,
+.animate-image,
+.animate-text,
+.img1,
+.img2,
+.img3,
+.img4 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.animate,
+.img1.animate,
+.img2.animate,
+.img3.animate,
+.img4.animate {
+    opacity: 1;
 }
