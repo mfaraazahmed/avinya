@@ -83,6 +83,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 95vh;
 }
 
 .sub-title {
@@ -179,7 +180,6 @@ span{
 .quote-section {
     display: flex;
     justify-content: center;
-    margin-top: 7rem;
 }
 
 .quote.col-6 {
