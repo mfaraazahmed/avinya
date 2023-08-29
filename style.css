@@ -1,4 +1,34 @@
+@keyframes slideAndFade {
+    0% {
+      left: -100%;
+      opacity: 0;
+    }
+    100% {
+      left: 35%;
+      opacity: 1;
+    }
+}
 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    to {
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slideInRight {
+    to {
+      transform: translateX(0);
+    }
+}
 
 .sub-title {
     font-family: 'Montserrat', sans-serif;
@@ -16,28 +46,58 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .hero .title {
     font-family: 'Caveat', cursive;
     font-size: 6rem;
-    margin: 2rem 0;
     color: #222;
+    position: absolute;
+    left: -50%;
+    top: 9rem;
+    opacity: 0;
+    font-weight: bold;
+    animation: slideAndFade 2s ease-in forwards;
 }
 
 .hero .hero-img {
     object-fit: cover;
     width: 40%;
     height: auto;
+    margin-top: 13rem;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
     /* rotate: 2deg; */
 }
+
+/* Your existing styles here */
+ 
 
 .hero .title span{
     color: #051BB0;
 }
 
-.quote, .about {
-    margin-top: 7rem;
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .sub-title {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.about .sub-title.animate {
+    animation: slideAndFadeAbout 2s forwards;
+}
+
+@keyframes slideAndFadeAbout {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .about .col-6.images {
@@ -54,6 +114,31 @@
 
 .about .content{
     margin-top: 5rem;
+}
+
+.quote-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Set initial positions */
+.quote-section .animate-image {
+    transform: translateX(-100%);
+}
+  
+.quote-section .animate-text {
+    transform: translateX(100%);
+}
+
+/* Apply animations */
+.quote-section .animate-image.animate {
+    animation: slideInLeft 1s ease-in forwards;
+}
+  
+.quote-section .animate-text.animate {
+    animation: slideInRight 1s ease-in forwards;
 }
 
 .quote-section .quote span{
