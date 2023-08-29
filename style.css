@@ -84,12 +84,12 @@
     justify-content: center;
 }
 
-.about .sub-title {
+.sub-title {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-.about .sub-title.animate {
+.sub-title.animate {
     animation: slideAndFadeAbout 2s forwards;
 }
 
@@ -114,6 +114,22 @@
 
 .about .content{
     margin-top: 5rem;
+    padding: 0 3rem 0 0;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.img1.animate,
+.img2.animate,
+.img3.animate,
+.img4.animate {
+  opacity: 1;
 }
 
 .quote-section {
@@ -123,13 +139,14 @@
     justify-content: center;
 }
 
+
 /* Set initial positions */
 .quote-section .animate-image {
     transform: translateX(-100%);
 }
   
 .quote-section .animate-text {
-    transform: translateX(100%);
+    transform: translateX(110%);
 }
 
 /* Apply animations */
@@ -138,7 +155,7 @@
 }
   
 .quote-section .animate-text.animate {
-    animation: slideInRight 1s ease-in forwards;
+    animation: slideInRight 1.5s ease-in forwards;
 }
 
 .quote-section .quote span{
@@ -174,11 +191,6 @@
     object-fit: cover;
 }
 
-.story-section {
-    margin: 0 auto;
-    margin-top: 7rem;
-}
-
 .story-section .col-4 img{
     height: auto;
     width: 90%;
@@ -188,10 +200,6 @@
 .story-section .story-line {
     width: 65vw;
     margin: 0 auto;
-}
-
-.story-section .sub-title {
-    margin-bottom: 4rem;
 }
 
 .story-section .story-line .row {
@@ -209,8 +217,45 @@
     margin-bottom: 0.5rem;
 }
 
+.venturescape-section {
+    height: 95vh;
+    padding-top: 5rem;
+}
+
+.venturescape-section .sub-title {
+    margin-bottom: 3rem;
+}
+
+.venturescape-section .ventures{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.venturescape-section .ventures img{
+    width: 18rem;
+    height: auto;
+    object-fit: cover;
+    background-color: #222;
+    padding: 3rem;
+    border-radius: 10px;
+    transition: transform 300ms ease-in-out;
+    
+}
+
+.venturescape-section .ventures img:hover{
+    transform: scale(1.3);
+    
+}
+
 .read-section {
-    margin-top: 7rem;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    column-gap: 2rem;
+    justify-content: center;
 }
 
 .read-section .sub-title {
@@ -304,9 +349,10 @@
 
 .contact-me .row .col-4 img{
     height: 35rem;
-    width: auto;
+    width: -webkit-fill-available;
     object-fit: cover;
     border-radius: 10px;
+
 }
 
 .contact-me .row .col-8 form{

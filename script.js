@@ -1,43 +1,21 @@
+function animateOnScroll(elements, animationClass) {
+  elements.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    const triggerOffset = windowHeight / 0.9 - element.clientHeight / 2;
 
-
-// const subTitles = document.querySelectorAll('.sub-title');
-// const triggerOffset = window.innerHeight / 2; // Half of the window height
-
-// function animateOnScroll() {
-//   subTitles.forEach(title => {
-//     const titleTop = title.getBoundingClientRect().top;
-//     if (titleTop < triggerOffset) {
-//       title.classList.add('animate');
-//     }
-//   });
-// }
-
-// window.addEventListener('scroll', animateOnScroll);
+    if (elementTop < triggerOffset) {
+      element.classList.add(animationClass);
+    }
+  });
+}
 
 const subTitles = document.querySelectorAll('.sub-title');
-const triggerOffset = window.innerHeight / 2; // Half of the window height
+const animateImageElements = document.querySelectorAll('.animate-image, .animate-text');
+const animateImageElementsMore = document.querySelectorAll('.img1, .img2, .img3, .img4');
 
-function animateOnScroll() {
-  subTitles.forEach(title => {
-    const titleTop = title.getBoundingClientRect().top;
-    if (titleTop < triggerOffset) {
-      title.classList.add('animate');
-    }
-  });
-}
-
-window.addEventListener('scroll', animateOnScroll);
-
-const animateElements = document.querySelectorAll('.animate-image, .animate-text');
-const triggerOffsetAnimate = window.innerHeight / 2;
-
-function animateOnScrollAnimate() {
-  animateElements.forEach(element => {
-    const elementTop = element.getBoundingClientRect().top;
-    if (elementTop < triggerOffsetAnimate) {
-      element.classList.add('animate');
-    }
-  });
-}
-
-window.addEventListener('scroll', animateOnScrollAnimate);
+window.addEventListener('scroll', () => {
+  animateOnScroll(subTitles, 'animate');
+  animateOnScroll(animateImageElements, 'animate');
+  animateOnScroll(animateImageElementsMore, 'animate');
+});
