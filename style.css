@@ -50,7 +50,8 @@
 }
 
 .hero .title {
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Dancing Script', cursive;
     font-size: 6rem;
     color: #222;
     position: absolute;
@@ -74,7 +75,7 @@
 /* Your existing styles here */
  
 
-.hero .title span{
+span{
     color: #051BB0;
 }
 
@@ -292,7 +293,6 @@
 }
 
 .awards-section .row .col-6 .sub-title{
-    font-size: 5rem;
     line-height: 5rem;
 }
 
@@ -314,7 +314,7 @@
     flex-direction: column;
     gap: 2rem;
     border-radius: 10px;
-    margin-top: 14rem;
+    margin-top: 8rem;
 }
 
 .awards-section .row .col-6 .achievements .content .list{
