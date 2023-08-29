@@ -1,33 +1,6 @@
-@keyframes slideAndFade {
-    0% {
-      left: -100%;
-      opacity: 0;
-    }
-    100% {
-      left: 35%;
-      opacity: 1;
-    }
-}
-
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-
-@keyframes slideInLeft {
-    to {
-      transform: translateX(0);
-    }
-}
-  
-@keyframes slideInRight {
-    to {
-      transform: translateX(0);
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .sub-title {
@@ -54,21 +27,17 @@
     font-family: 'Dancing Script', cursive;
     font-size: 6rem;
     color: #222;
-    position: absolute;
-    left: -50%;
-    top: 9rem;
-    opacity: 0;
     font-weight: bold;
-    animation: slideAndFade 2s ease-in forwards;
+    transition: 0.5s ease;
+    animation: fadeIn 5s;
 }
 
 .hero .hero-img {
     object-fit: cover;
     width: 40%;
     height: auto;
-    margin-top: 15rem;
-    opacity: 0;
-    animation: fadeIn 3s ease-in forwards;
+    margin-top: 4rem;
+    animation: fadeIn 5s;
     /* rotate: 2deg; */
 }
 
@@ -84,22 +53,6 @@ span{
     align-items: center;
     justify-content: center;
     height: 95vh;
-}
-
-.sub-title {
-    opacity: 0;
-    transform: translateX(-100%);
-}
-
-.sub-title.animate {
-    animation: slideAndFadeAbout 2s forwards;
-}
-
-@keyframes slideAndFadeAbout {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 .about .col-6.images {
@@ -119,20 +72,6 @@ span{
     padding: 0 3rem 0 0;
 }
 
-.img1,
-.img2,
-.img3,
-.img4 {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.img1.animate,
-.img2.animate,
-.img3.animate,
-.img4.animate {
-  opacity: 1;
-}
 
 .quote-section {
     height: 90vh;
@@ -141,24 +80,7 @@ span{
     justify-content: center;
 }
 
-
-/* Set initial positions */
-.quote-section .animate-image {
-    transform: translateX(-100%);
-}
-  
-.quote-section .animate-text {
-    transform: translateX(110%);
-}
-
 /* Apply animations */
-.quote-section .animate-image.animate {
-    animation: slideInLeft 1s ease-in forwards;
-}
-  
-.quote-section .animate-text.animate {
-    animation: slideInRight 1.5s ease-in forwards;
-}
 
 .quote-section .quote span{
     color: #051BB0;
@@ -226,7 +148,7 @@ span{
 }
 
 .venturescape-title {
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     font-weight: 400;
     font-size: 2rem;
 }
@@ -253,7 +175,7 @@ span{
 }
 
 .venturescape-section .ventures img:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
     
 }
 
@@ -418,32 +340,4 @@ textarea {
 .footer-section .author{
     font: 1.5rem;
     font-weight: 500;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.sub-title,
-.animate-image,
-.animate-text,
-.img1,
-.img2,
-.img3,
-.img4 {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.animate,
-.img1.animate,
-.img2.animate,
-.img3.animate,
-.img4.animate {
-    opacity: 1;
 }
