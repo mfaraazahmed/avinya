@@ -54,6 +54,23 @@ body {
     color: #222;
 }
 
+.hero .arrow {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #f9f9f9;
+}
+
+.new {
+    position: relative;
+    bottom: 1rem;
+}
+
 .sub-title {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
@@ -447,7 +464,7 @@ textarea {
 }
 
 .footer-section .footer-quote{
-    font-size: 7rem;
+    font-size: 5rem;
     font-family: 'Tangerine', cursive;
     width: fit-content;
     animation-delay: 0.2s;
