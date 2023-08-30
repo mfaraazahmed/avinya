@@ -2,7 +2,7 @@
     opacity: 0;
     transform: translateX(-30px);
     visibility: hidden;
-    animation: moveup 0.5s linear forwards;
+    animation: moveup 2s linear forwards;
     animation-fill-mode: forwards;
 }
 
@@ -21,13 +21,13 @@
 
 
 .sub-title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     visibility: hidden;
 }
 
 .content {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -50,9 +50,8 @@
 
 .hero .hero-img {
     object-fit: cover;
-    width: 40%;
+    width: 52%;
     height: auto;
-    margin-top: 2rem;
     animation-delay: 0.3s;
 }
 
@@ -107,16 +106,14 @@ span{
 .quote-section .quote span{
     color: #051BB0;
     font-weight: 600;
-    font-size: 8rem;
+    font-size: 10rem;
     line-height: 1;
 }
 
 .box {
     height: fit-content;
     width: auto;
-    border: 3px solid #333;
     padding: 2rem;
-    border-radius: 10px;
 }
 
 .span-style {
@@ -125,15 +122,17 @@ span{
 }
 
 .quote-section .quote{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 5rem;
-    width: 60vw;
+    width: 35vw;
     visibility: hidden;
+    line-height: 0.1;
+    font-weight: 500;
 }
 
 .quote-section .quote.right{
     float: right;
-    text-align: right;
+    text-align: left;
 }
 
 
@@ -147,9 +146,10 @@ span{
 }
 
 .quote-section img{
-    height: 17rem;
+    height: 35rem;
     width: auto;
     object-fit: cover;
+    margin-right: 1rem;
 }
 
 .story-section .col-4 img{
@@ -186,8 +186,8 @@ span{
 
 .venturescape-title {
     margin-top: 1rem;
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .venturescape-section .sub-title {
@@ -206,7 +206,6 @@ span{
     height: 17rem;
     object-fit: cover;
     background-color: #222;
-    border-radius: 10px;
     transition: transform 300ms ease-in-out;
     
 }
@@ -238,7 +237,7 @@ span{
 }
 
 .read-section .book-review .book-title {
-    font-family: 'Courgette', cursive;
+    font-family: 'Tangerine', cursive;
     font-size: 1.3rem;
     margin: 0.5rem 0;
 }
@@ -274,21 +273,25 @@ span{
 }
 
 .awards-section .row .col-6 .achievements .content {
-    background-color: #222;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    border-radius: 10px;
-    margin-top: 8rem;
+    margin-top: 6rem;
+}
+
+.achievements .content span {
+    color: #051BB0;
+    font-size: 2.3rem;
+    display: inline;
 }
 
 .awards-section .row .col-6 .achievements .content .list{
-    display: flex;
     align-items: start;
     justify-self: center;
     flex-direction: column;
-    color: #f9f9f9;
+    color: #333;
+    font-weight: 800;
 }
 
 .awards-section .row .col-6 .achievements .content .list div {
@@ -303,8 +306,7 @@ span{
 }
 
 .contact-me .row{
-    background-color: #222;
-    border-radius: 10px;
+    /* background-color: #222; */
     margin-top: 3rem;
 }
 
@@ -317,8 +319,6 @@ span{
     height: 35rem;
     width: -webkit-fill-available;
     object-fit: cover;
-    border-radius: 10px;
-
 }
 
 .contact-me .row .col-8 form{
@@ -326,28 +326,32 @@ span{
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-    margin-top: 1.5rem;
+    row-gap: 4rem;
 }
 
 .contact-me .row .col-8 form label {
-    color: #f9f9f9;
-    margin-top: 1.5rem;
+    color: #222;
     font-size: 1.5rem;
+    display: none;
 }
 
 .contact-me .row .col-8 form input {
     height: 3rem;
-    border-radius: 10px;
     width: 80%;
+    border: 2px solid #222;
+    padding: 1rem;
 }
 
-textarea {   
-    border-radius: 10px;
+textarea {  
     width: 80%;
+    border: 2px solid #222;
+    padding: 1rem;
 }
 
 .contact-me .row .col-8 form input[type="submit"] {
     margin-top: 2rem;
+    background-color: #f9f9f9;
+    padding: 0;
 }
 
 .contact-me .row .col-8 form input[type="submit"]:hover{
