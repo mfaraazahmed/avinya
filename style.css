@@ -19,6 +19,36 @@
     }
 }
 
+body {
+    background-color: #faf9f6;
+}
+
+/* Navbar styles */
+
+.hero .navbar .navbar-brand img {
+    height: 4rem;
+    width: auto;
+    margin-left: 3rem;
+}
+
+.hero #navbarNavAltMarkup {
+    justify-content: flex-end;
+}
+
+.hero .navbar-nav {
+    gap: 2.5rem;
+    margin-right: 3rem;
+}
+
+.hero .navbar-nav .nav-link {
+    color: #faf9f6;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero .navbar-nav .nav-link:hover {
+    color: #222;
+}
 
 .sub-title {
     font-family: 'Poppins', sans-serif;
@@ -33,26 +63,22 @@
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    background-image: url("./images/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.hero .title {
-    /* font-family: 'Caveat', cursive; */
+ .hero .title {
     font-family: 'Tangerine', cursive;
-    font-size: 10rem;
-    color: #222;
+    font-size: 7rem;
+    color: #faf9f6;
     font-weight: bold;
-}
-
-.hero .hero-img {
-    object-fit: cover;
-    width: 52%;
-    height: auto;
-    animation-delay: 0.3s;
+    position: absolute;
+    right: 5rem;
+    top: 10rem;
 }
 
 /* Your existing styles here */
@@ -66,7 +92,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 100vh;
 }
 
 .about .sub-title {
@@ -94,20 +120,19 @@ span{
 .about .content{
     margin-top: 2rem;
     padding: 0 3rem 0 0;
+    text-align: justify;
+    font-weight: 300;
+    
 }
 
 .quote-section {
-    height: 90vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.quote-section .quote span{
-    color: #051BB0;
-    font-weight: 600;
-    font-size: 10rem;
-    line-height: 1;
+    margin: 2rem 0;
+    gap: 3rem;
 }
 
 .box {
@@ -116,29 +141,55 @@ span{
     padding: 2rem;
 }
 
-.span-style {
-    font-family: 'Tangerine', cursive;
-    font-size: 5rem;
-}
 
 .quote-section .quote{
     font-family: 'Poppins', sans-serif;
-    font-size: 5rem;
-    width: 35vw;
+    font-size: 2rem;
+    width: 45vw;
     visibility: hidden;
-    line-height: 0.1;
+    line-height: 0.6;
     font-weight: 500;
 }
 
 .quote-section .quote.right{
     float: right;
     text-align: left;
+    height: 100%;
 }
 
+.quote-section .quote.right .content {
+    font-weight: 300;
+    margin-top: 1rem;
+    font-style: italic;
+    text-align: justify;
+}
+
+/* .quote-section .quote.right .content span {
+    font-size: 5rem;
+    font-style: regular;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    line-height: 0.5;
+    color: #333;
+} */
+
+.quote-section .quote span{
+    color: #051BB0;
+    font-weight: 600;
+    font-size: 8rem;
+    line-height: 1;
+    font-family: 'Tangerine', cursive;
+}
+
+.quote-section div {
+    height: 100%;
+}
 
 .quote-section {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    height: 35rem;
+
 }
 
 .quote.col-6 {
@@ -146,7 +197,7 @@ span{
 }
 
 .quote-section img{
-    height: 35rem;
+    height: 80%;
     width: auto;
     object-fit: cover;
     margin-right: 1rem;
@@ -180,7 +231,7 @@ span{
 }
 
 .venturescape-section {
-    height: 95vh;
+    height: 75vh;
     padding-top: 5rem;
 }
 
@@ -216,7 +267,7 @@ span{
 }
 
 .read-section {
-    height: 95vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -238,7 +289,7 @@ span{
 
 .read-section .book-review .book-title {
     font-family: 'Tangerine', cursive;
-    font-size: 1.3rem;
+    font-size: 3rem;
     margin: 0.5rem 0;
 }
 
@@ -254,7 +305,7 @@ span{
 }
 
 .awards-section {
-    margin-top: 10rem;
+    margin-top: 4rem;
 }
 
 .awards-section .row .col-6 .sub-title{
@@ -266,18 +317,36 @@ span{
 }
 
 .awards-section .row .col-6 img {
-    height: 25rem;
+    height: 28rem;
     width: auto;
     object-fit: cover;
     margin-top: 3rem;
 }
 
 .awards-section .row .col-6 .achievements .content {
-    padding: 2rem;
+    padding: 4rem 0;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 6rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.awards-section .row .col-6 .achievements .content .card {
+    width: 17rem;
+    height: 13.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #faf9f6;
+}
+
+.awards-section .row .col-6 .achievements .content .card .card-title {
+    color: #051BB0;
+    font-size: 2.2rem;
+    margin: 1.2rem 0;
+    text-align: center;
+    font-weight: 1000;
 }
 
 .achievements .content span {
@@ -301,13 +370,8 @@ span{
 }
 
 .contact-me {
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 6rem;
-}
-
-.contact-me .row{
-    /* background-color: #222; */
-    margin-top: 3rem;
 }
 
 .contact-me .row .col-4 {
@@ -315,49 +379,60 @@ span{
     padding: 0 !important;
 }
 
-.contact-me .row .col-4 img{
+.contact-me .row img{
     height: 35rem;
-    width: -webkit-fill-available;
+    width: auto;
     object-fit: cover;
 }
 
-.contact-me .row .col-8 form{
+.contact-me .contact-img {
     display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    row-gap: 4rem;
+    justify-content: center;
 }
 
-.contact-me .row .col-8 form label {
+.contact-me .row form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    row-gap: 1rem;
+}
+
+.contact-me .row form label {
     color: #222;
     font-size: 1.5rem;
     display: none;
 }
 
-.contact-me .row .col-8 form input {
-    height: 3rem;
+.contact-me .row form input {
+    height: 2.7rem;
     width: 80%;
     border: 2px solid #222;
     padding: 1rem;
+    width: 30rem;
+    background-color: #faf9f6;;
 }
 
 textarea {  
     width: 80%;
     border: 2px solid #222;
     padding: 1rem;
+    width: 30rem;
+    background-color: #faf9f6;;
 }
 
-.contact-me .row .col-8 form input[type="submit"] {
+.contact-me .row form input[type="submit"] {
     margin-top: 2rem;
-    background-color: #f9f9f9;
+    background-color: #faf9f6;;
     padding: 0;
+    font-weight: 700;
 }
 
-.contact-me .row .col-8 form input[type="submit"]:hover{
-    border: 1px solid  #f9f9f9;
-    color: #f9f9f9;
+.contact-me .row form input[type="submit"]:hover{
+    border: 1px solid  #faf9f6;;
+    color: #faf9f6;;
     background-color: #222;
+    font-weight: 800;
 }
 
 .footer-section{
@@ -370,17 +445,13 @@ textarea {
 }
 
 .footer-section .footer-quote{
-    font-size: 3rem;
+    font-size: 7rem;
+    font-family: 'Tangerine', cursive;
     width: fit-content;
     animation-delay: 0.2s;
+
 }
 
 .footer-section .footer-quote span{
     color: #051BB0;
-}
-
-.footer-section .author{
-    font: 1.5rem;
-    font-weight: 500;
-    animation-delay: 0.4s;
 }
