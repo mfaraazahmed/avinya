@@ -1,42 +1,33 @@
-@keyframes slideAndFade {
+.animation {
+    opacity: 0;
+    transform: translateX(-30px);
+    visibility: hidden;
+    animation: moveup 0.5s linear forwards;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes moveup {
     0% {
-      left: -100%;
-      opacity: 0;
+        opacity: 0;
+        transform: translateX(-30px);
     }
     100% {
-      left: 35%;
-      opacity: 1;
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
     }
 }
 
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-
-@keyframes slideInLeft {
-    to {
-      transform: translateX(0);
-    }
-}
-  
-@keyframes slideInRight {
-    to {
-      transform: translateX(0);
-    }
-}
 
 .sub-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 3rem;
+    visibility: hidden;
 }
 
 .content {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -51,25 +42,18 @@
 
 .hero .title {
     /* font-family: 'Caveat', cursive; */
-    font-family: 'Dancing Script', cursive;
-    font-size: 6rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 10rem;
     color: #222;
-    position: absolute;
-    left: -50%;
-    top: 9rem;
-    opacity: 0;
     font-weight: bold;
-    animation: slideAndFade 2s ease-in forwards;
 }
 
 .hero .hero-img {
     object-fit: cover;
     width: 40%;
     height: auto;
-    margin-top: 15rem;
-    opacity: 0;
-    animation: fadeIn 3s ease-in forwards;
-    /* rotate: 2deg; */
+    margin-top: 2rem;
+    animation-delay: 0.3s;
 }
 
 /* Your existing styles here */
@@ -88,22 +72,12 @@ span{
 
 .about .sub-title {
     margin-top: 5rem;
+    animation-delay: 0.2s;
 }
 
-.sub-title {
-    opacity: 0;
-    transform: translateX(-100%);
-}
-
-.sub-title.animate {
-    animation: slideAndFadeAbout 2s forwards;
-}
-
-@keyframes slideAndFadeAbout {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.images {
+    visibility: hidden;
+    animation-delay: 0.3s;
 }
 
 .about .col-6.images {
@@ -123,21 +97,6 @@ span{
     padding: 0 3rem 0 0;
 }
 
-.img1,
-.img2,
-.img3,
-.img4 {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.img1.animate,
-.img2.animate,
-.img3.animate,
-.img4.animate {
-  opacity: 1;
-}
-
 .quote-section {
     height: 90vh;
     display: flex;
@@ -145,28 +104,11 @@ span{
     justify-content: center;
 }
 
-
-/* Set initial positions */
-.quote-section .animate-image {
-    transform: translateX(-100%);
-}
-  
-.quote-section .animate-text {
-    transform: translateX(110%);
-}
-
-/* Apply animations */
-.quote-section .animate-image.animate {
-    animation: slideInLeft 1s ease-in forwards;
-}
-  
-.quote-section .animate-text.animate {
-    animation: slideInRight 1.5s ease-in forwards;
-}
-
 .quote-section .quote span{
     color: #051BB0;
     font-weight: 600;
+    font-size: 8rem;
+    line-height: 1;
 }
 
 .box {
@@ -178,14 +120,15 @@ span{
 }
 
 .span-style {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Tangerine', cursive;
     font-size: 5rem;
 }
 
 .quote-section .quote{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 5rem;
     width: 60vw;
+    visibility: hidden;
 }
 
 .quote-section .quote.right{
@@ -425,6 +368,7 @@ textarea {
 .footer-section .footer-quote{
     font-size: 3rem;
     width: fit-content;
+    animation-delay: 0.2s;
 }
 
 .footer-section .footer-quote span{
@@ -434,4 +378,5 @@ textarea {
 .footer-section .author{
     font: 1.5rem;
     font-weight: 500;
+    animation-delay: 0.4s;
 }
